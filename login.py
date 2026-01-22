@@ -7,6 +7,7 @@ import json
 if "firebase" not in st.session_state:
     firebase_json = st.secrets["firebase"]["service_account"]
     firebase_cred = json.loads(firebase_json)
+    firebase_cred["private_key"] = firebase_cred["private_key"].replace("\\n", "\n")
     cred = credentials.Certificate(firebase_cred)
 
     if not firebase_admin._apps:
