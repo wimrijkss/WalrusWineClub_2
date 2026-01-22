@@ -13,7 +13,7 @@ else:
     customeCss()
 
     # Page
-    st.title("Walrus Wine Club   Beta 2.2")
+    st.title("Walrus Wine Club Beta 2.2")
 
     df = pd.DataFrame(get_collection("wines"))
     
@@ -87,9 +87,10 @@ else:
                             f"<div class='card'>"
                             f"<h1>{wine['name']}</h1>"
                             f"<h3>{wine['year']}</h3>"
-                            f"<p>{wine['winery']}</p>"
-                            f"<p>{wine['grape']}</p>"
-                            f"<p>{wine['type']}</p>"
+                            f"<p>Vingård:{wine['winery']}</p>"
+                            f"<p>Drue: {wine['grape']}</p>"
+                            f"<p>Type: {wine['type']}</p>"
+                            f"<br>"
                             f"<p>Average rating<p>"
                             f"<div class='card-rating'>"
                                 f"<p class='ratingAvg'>{wine['ratingAvg']}</p>"
