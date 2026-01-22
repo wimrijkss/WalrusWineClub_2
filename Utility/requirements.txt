@@ -1,0 +1,9 @@
+streamlit
+firebase-admin
+pandas
+numpy
+pillow
+requests
+altair
+pytz
+plotly
