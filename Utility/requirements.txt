@@ -7,3 +7,4 @@ requests
 altair
 pytz
 plotly
+firebase-admin
