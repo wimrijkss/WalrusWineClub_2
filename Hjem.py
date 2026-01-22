@@ -13,7 +13,7 @@ else:
     customeCss()
 
     # Page
-    st.title("Walrus Wine Club   Beta 2.1")
+    st.title("Walrus Wine Club   Beta 2.2")
 
     df = pd.DataFrame(get_collection("wines"))
     
